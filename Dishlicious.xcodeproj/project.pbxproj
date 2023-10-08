@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2B90CAA2AD287D60001FC6B /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B90CA92AD287D60001FC6B /* RecipesViewController.swift */; };
 		D2DB70FB2AD1374000D8CEB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB70FA2AD1374000D8CEB7 /* AppDelegate.swift */; };
 		D2DB70FD2AD1374000D8CEB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB70FC2AD1374000D8CEB7 /* SceneDelegate.swift */; };
 		D2DB70FF2AD1374000D8CEB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB70FE2AD1374000D8CEB7 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D2B90CA92AD287D60001FC6B /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		D2DB70F72AD1374000D8CEB7 /* Dishlicious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dishlicious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DB70FA2AD1374000D8CEB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2DB70FC2AD1374000D8CEB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				D2DB70FC2AD1374000D8CEB7 /* SceneDelegate.swift */,
 				D2DB70FE2AD1374000D8CEB7 /* ViewController.swift */,
 				D2DB71002AD1374000D8CEB7 /* Main.storyboard */,
+				D2B90CA92AD287D60001FC6B /* RecipesViewController.swift */,
 				D2DB71062AD1374100D8CEB7 /* Assets.xcassets */,
 				D2DB71082AD1374100D8CEB7 /* LaunchScreen.storyboard */,
 				D2DB710B2AD1374100D8CEB7 /* Info.plist */,
@@ -144,6 +147,7 @@
 				D2DB71052AD1374000D8CEB7 /* Dishlicious.xcdatamodeld in Sources */,
 				D2DB70FF2AD1374000D8CEB7 /* ViewController.swift in Sources */,
 				D2DB70FB2AD1374000D8CEB7 /* AppDelegate.swift in Sources */,
+				D2B90CAA2AD287D60001FC6B /* RecipesViewController.swift in Sources */,
 				D2DB70FD2AD1374000D8CEB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
