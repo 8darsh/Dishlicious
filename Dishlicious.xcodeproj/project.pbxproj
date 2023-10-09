@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2B90CAA2AD287D60001FC6B /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B90CA92AD287D60001FC6B /* RecipesViewController.swift */; };
+		D2966CCD2AD3FB9B0078E5EA /* DishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2966CCC2AD3FB9B0078E5EA /* DishModel.swift */; };
+		D2966CD02AD400F20078E5EA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2966CCF2AD400F20078E5EA /* Constant.swift */; };
+		D2966CD22AD402340078E5EA /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2966CD12AD402340078E5EA /* EndPointType.swift */; };
+		D2966CD42AD402430078E5EA /* DataEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2966CD32AD402430078E5EA /* DataEndPoint.swift */; };
+		D2966CD62AD4037A0078E5EA /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2966CD52AD4037A0078E5EA /* ApiManager.swift */; };
+		D2966CD82AD404E70078E5EA /* DishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2966CD72AD404E70078E5EA /* DishViewModel.swift */; };
+		D2966CDA2AD406880078E5EA /* TrendDishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2966CD92AD406880078E5EA /* TrendDishCollectionViewCell.swift */; };
+		D2966CDC2AD406A40078E5EA /* HotRecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2966CDB2AD406A40078E5EA /* HotRecipesTableViewCell.swift */; };
+		D2966CDE2AD409620078E5EA /* detailRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2966CDD2AD409620078E5EA /* detailRecipesViewController.swift */; };
+		D2966CE02AD40AA10078E5EA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2966CDF2AD40AA10078E5EA /* HomeViewController.swift */; };
 		D2DB70FB2AD1374000D8CEB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB70FA2AD1374000D8CEB7 /* AppDelegate.swift */; };
 		D2DB70FD2AD1374000D8CEB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB70FC2AD1374000D8CEB7 /* SceneDelegate.swift */; };
-		D2DB70FF2AD1374000D8CEB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB70FE2AD1374000D8CEB7 /* ViewController.swift */; };
 		D2DB71022AD1374000D8CEB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DB71002AD1374000D8CEB7 /* Main.storyboard */; };
 		D2DB71052AD1374000D8CEB7 /* Dishlicious.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2DB71032AD1374000D8CEB7 /* Dishlicious.xcdatamodeld */; };
 		D2DB71072AD1374100D8CEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2DB71062AD1374100D8CEB7 /* Assets.xcassets */; };
@@ -18,11 +26,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D2B90CA92AD287D60001FC6B /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		D2966CCC2AD3FB9B0078E5EA /* DishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishModel.swift; sourceTree = "<group>"; };
+		D2966CCF2AD400F20078E5EA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D2966CD12AD402340078E5EA /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		D2966CD32AD402430078E5EA /* DataEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEndPoint.swift; sourceTree = "<group>"; };
+		D2966CD52AD4037A0078E5EA /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D2966CD72AD404E70078E5EA /* DishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewModel.swift; sourceTree = "<group>"; };
+		D2966CD92AD406880078E5EA /* TrendDishCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendDishCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2966CDB2AD406A40078E5EA /* HotRecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotRecipesTableViewCell.swift; sourceTree = "<group>"; };
+		D2966CDD2AD409620078E5EA /* detailRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailRecipesViewController.swift; sourceTree = "<group>"; };
+		D2966CDF2AD40AA10078E5EA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D2DB70F72AD1374000D8CEB7 /* Dishlicious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dishlicious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DB70FA2AD1374000D8CEB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2DB70FC2AD1374000D8CEB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2DB70FE2AD1374000D8CEB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2DB71012AD1374000D8CEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2DB71042AD1374000D8CEB7 /* Dishlicious.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dishlicious.xcdatamodel; sourceTree = "<group>"; };
 		D2DB71062AD1374100D8CEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +57,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2966CC22AD3FA5E0078E5EA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB70FA2AD1374000D8CEB7 /* AppDelegate.swift */,
+				D2DB70FC2AD1374000D8CEB7 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D2966CC32AD3FA750078E5EA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D2966CCF2AD400F20078E5EA /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D2966CC42AD3FA9E0078E5EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D2966CC52AD3FAAE0078E5EA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D2966CC92AD3FB190078E5EA /* Model */,
+				D2966CCB2AD3FB3A0078E5EA /* View */,
+				D2966CCA2AD3FB300078E5EA /* viewModel */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D2966CC62AD3FABA0078E5EA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB71002AD1374000D8CEB7 /* Main.storyboard */,
+				D2DB71082AD1374100D8CEB7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D2966CC72AD3FAC30078E5EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB71062AD1374100D8CEB7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2966CC82AD3FAD20078E5EA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D2966CD12AD402340078E5EA /* EndPointType.swift */,
+				D2966CD32AD402430078E5EA /* DataEndPoint.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D2966CC92AD3FB190078E5EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2966CCC2AD3FB9B0078E5EA /* DishModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2966CCA2AD3FB300078E5EA /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2966CD72AD404E70078E5EA /* DishViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		D2966CCB2AD3FB3A0078E5EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2966CD92AD406880078E5EA /* TrendDishCollectionViewCell.swift */,
+				D2966CDB2AD406A40078E5EA /* HotRecipesTableViewCell.swift */,
+				D2966CDD2AD409620078E5EA /* detailRecipesViewController.swift */,
+				D2966CDF2AD40AA10078E5EA /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2966CCE2AD400D60078E5EA /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				D2966CD52AD4037A0078E5EA /* ApiManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
 		D2DB70EE2AD1374000D8CEB7 = {
 			isa = PBXGroup;
 			children = (
@@ -60,13 +171,14 @@
 		D2DB70F92AD1374000D8CEB7 /* Dishlicious */ = {
 			isa = PBXGroup;
 			children = (
-				D2DB70FA2AD1374000D8CEB7 /* AppDelegate.swift */,
-				D2DB70FC2AD1374000D8CEB7 /* SceneDelegate.swift */,
-				D2DB70FE2AD1374000D8CEB7 /* ViewController.swift */,
-				D2DB71002AD1374000D8CEB7 /* Main.storyboard */,
-				D2B90CA92AD287D60001FC6B /* RecipesViewController.swift */,
-				D2DB71062AD1374100D8CEB7 /* Assets.xcassets */,
-				D2DB71082AD1374100D8CEB7 /* LaunchScreen.storyboard */,
+				D2966CC22AD3FA5E0078E5EA /* Application */,
+				D2966CC32AD3FA750078E5EA /* Constants */,
+				D2966CC82AD3FAD20078E5EA /* Utility */,
+				D2966CC42AD3FA9E0078E5EA /* Extensions */,
+				D2966CCE2AD400D60078E5EA /* ApiManager */,
+				D2966CC52AD3FAAE0078E5EA /* Scenes */,
+				D2966CC62AD3FABA0078E5EA /* Storyboard */,
+				D2966CC72AD3FAC30078E5EA /* Resources */,
 				D2DB710B2AD1374100D8CEB7 /* Info.plist */,
 				D2DB71032AD1374000D8CEB7 /* Dishlicious.xcdatamodeld */,
 			);
@@ -144,10 +256,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2966CDA2AD406880078E5EA /* TrendDishCollectionViewCell.swift in Sources */,
+				D2966CDE2AD409620078E5EA /* detailRecipesViewController.swift in Sources */,
+				D2966CDC2AD406A40078E5EA /* HotRecipesTableViewCell.swift in Sources */,
+				D2966CD22AD402340078E5EA /* EndPointType.swift in Sources */,
+				D2966CD82AD404E70078E5EA /* DishViewModel.swift in Sources */,
+				D2966CE02AD40AA10078E5EA /* HomeViewController.swift in Sources */,
+				D2966CD02AD400F20078E5EA /* Constant.swift in Sources */,
+				D2966CD62AD4037A0078E5EA /* ApiManager.swift in Sources */,
+				D2966CD42AD402430078E5EA /* DataEndPoint.swift in Sources */,
 				D2DB71052AD1374000D8CEB7 /* Dishlicious.xcdatamodeld in Sources */,
-				D2DB70FF2AD1374000D8CEB7 /* ViewController.swift in Sources */,
+				D2966CCD2AD3FB9B0078E5EA /* DishModel.swift in Sources */,
 				D2DB70FB2AD1374000D8CEB7 /* AppDelegate.swift in Sources */,
-				D2B90CAA2AD287D60001FC6B /* RecipesViewController.swift in Sources */,
 				D2DB70FD2AD1374000D8CEB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
