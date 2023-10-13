@@ -24,4 +24,7 @@ class TrendDishCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var dishDetailView: UIView!
     
+    override class func awakeFromNib() {
+        
+    }
 }

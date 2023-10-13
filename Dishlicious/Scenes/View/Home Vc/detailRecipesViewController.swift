@@ -22,12 +22,14 @@ class detailRecipesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        setDetails()
         
     }
     
     func setDetails(){
         
+        self.dishImages.setImage(with: dish?.image ?? "hehe")
+        self.dishImages.layer.cornerRadius = 12
         for ingredient in dish?.ingredientLines ?? []{
             
             self.ingredients.text! += "\(ingredient) \n "

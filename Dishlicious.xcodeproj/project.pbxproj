@@ -23,6 +23,10 @@
 		D2DB71052AD1374000D8CEB7 /* Dishlicious.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2DB71032AD1374000D8CEB7 /* Dishlicious.xcdatamodeld */; };
 		D2DB71072AD1374100D8CEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2DB71062AD1374100D8CEB7 /* Assets.xcassets */; };
 		D2DB710A2AD1374100D8CEB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DB71082AD1374100D8CEB7 /* LaunchScreen.storyboard */; };
+		D2FC43422AD91B0F005359AE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D2FC43412AD91B0F005359AE /* Kingfisher */; };
+		D2FC43442AD91B6C005359AE /* UIimage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FC43432AD91B6C005359AE /* UIimage + Extension.swift */; };
+		D2FC43482AD9841D005359AE /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FC43472AD9841D005359AE /* RecipeTableViewCell.swift */; };
+		D2FC434A2AD9846E005359AE /* searchRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FC43492AD9846D005359AE /* searchRecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,9 @@
 		D2DB71062AD1374100D8CEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2DB71092AD1374100D8CEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2DB710B2AD1374100D8CEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2FC43432AD91B6C005359AE /* UIimage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage + Extension.swift"; sourceTree = "<group>"; };
+		D2FC43472AD9841D005359AE /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		D2FC43492AD9846D005359AE /* searchRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchRecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FC43422AD91B0F005359AE /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,7 @@
 		D2966CC42AD3FA9E0078E5EA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D2FC43432AD91B6C005359AE /* UIimage + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -136,10 +145,8 @@
 		D2966CCB2AD3FB3A0078E5EA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D2966CD92AD406880078E5EA /* TrendDishCollectionViewCell.swift */,
-				D2966CDB2AD406A40078E5EA /* HotRecipesTableViewCell.swift */,
-				D2966CDD2AD409620078E5EA /* detailRecipesViewController.swift */,
-				D2966CDF2AD40AA10078E5EA /* HomeViewController.swift */,
+				D2FC43462AD983F1005359AE /* SearchRecipe VC */,
+				D2FC43452AD983D9005359AE /* Home Vc */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,6 +192,26 @@
 			path = Dishlicious;
 			sourceTree = "<group>";
 		};
+		D2FC43452AD983D9005359AE /* Home Vc */ = {
+			isa = PBXGroup;
+			children = (
+				D2966CD92AD406880078E5EA /* TrendDishCollectionViewCell.swift */,
+				D2966CDB2AD406A40078E5EA /* HotRecipesTableViewCell.swift */,
+				D2966CDD2AD409620078E5EA /* detailRecipesViewController.swift */,
+				D2966CDF2AD40AA10078E5EA /* HomeViewController.swift */,
+			);
+			path = "Home Vc";
+			sourceTree = "<group>";
+		};
+		D2FC43462AD983F1005359AE /* SearchRecipe VC */ = {
+			isa = PBXGroup;
+			children = (
+				D2FC43472AD9841D005359AE /* RecipeTableViewCell.swift */,
+				D2FC43492AD9846D005359AE /* searchRecipeViewController.swift */,
+			);
+			path = "SearchRecipe VC";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,6 +228,9 @@
 			dependencies = (
 			);
 			name = Dishlicious;
+			packageProductDependencies = (
+				D2FC43412AD91B0F005359AE /* Kingfisher */,
+			);
 			productName = Dishlicious;
 			productReference = D2DB70F72AD1374000D8CEB7 /* Dishlicious.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +259,9 @@
 				Base,
 			);
 			mainGroup = D2DB70EE2AD1374000D8CEB7;
+			packageReferences = (
+				D2FC43402AD91B0F005359AE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D2DB70F82AD1374000D8CEB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -256,11 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FC434A2AD9846E005359AE /* searchRecipeViewController.swift in Sources */,
 				D2966CDA2AD406880078E5EA /* TrendDishCollectionViewCell.swift in Sources */,
 				D2966CDE2AD409620078E5EA /* detailRecipesViewController.swift in Sources */,
 				D2966CDC2AD406A40078E5EA /* HotRecipesTableViewCell.swift in Sources */,
+				D2FC43442AD91B6C005359AE /* UIimage + Extension.swift in Sources */,
 				D2966CD22AD402340078E5EA /* EndPointType.swift in Sources */,
 				D2966CD82AD404E70078E5EA /* DishViewModel.swift in Sources */,
+				D2FC43482AD9841D005359AE /* RecipeTableViewCell.swift in Sources */,
 				D2966CE02AD40AA10078E5EA /* HomeViewController.swift in Sources */,
 				D2966CD02AD400F20078E5EA /* Constant.swift in Sources */,
 				D2966CD62AD4037A0078E5EA /* ApiManager.swift in Sources */,
@@ -491,6 +527,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2FC43402AD91B0F005359AE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2FC43412AD91B0F005359AE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2FC43402AD91B0F005359AE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D2DB71032AD1374000D8CEB7 /* Dishlicious.xcdatamodeld */ = {

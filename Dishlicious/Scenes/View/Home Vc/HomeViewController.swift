@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class HomeViewController: UIViewController {
     @IBOutlet var headerView: UIView!
     
@@ -14,17 +14,18 @@ class HomeViewController: UIViewController {
     
     
     @IBOutlet var tableView: UITableView!
-    @IBOutlet var searchBar: UISearchBar!
+//    @IBOutlet var searchBar: UISearchBar!
     
     
     var viewModel = DishViewModel()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.headerView.layer.cornerRadius = 25
- 
+//        searchBarSetup()
         configuration()
     }
     
@@ -40,6 +41,7 @@ extension HomeViewController{
     
     func initViewModel(){
         viewModel.fetchdata()
+        
     }
     
     func observeEvent(){
@@ -65,20 +67,34 @@ extension HomeViewController{
                 print(error)
             }
         }
+        
     }
 }
 extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.dish?.hits.count ?? 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        ApiManager.shared.updateSearchQuery(query: "non-veg") { [weak self] result in
+            switch result{
+                
+            case .success(let dish):
+                self?.viewModel.dish = dish
+               
+
+            case .failure(let error):
+                print(error)
+            }
+        }
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! HotRecipesTableViewCell
         let dish = viewModel.dish?.hits[indexPath.row]
         cell.dishName.text = dish?.recipe.label
         cell.cuisineType.text = dish?.recipe.cuisineType?[0]
-    
-        
+        cell.dishImage.setImage(with: dish?.recipe.image ?? "hehe")
+        cell.dishImage.layer.cornerRadius = 15
         return cell
     }
     
@@ -87,6 +103,9 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
         let recipe = viewModel.dish?.hits[indexPath.row].recipe
         vc.dish = recipe
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 84
     }
     
     
@@ -103,12 +122,13 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         TrendDishCollectionViewCell
         let dish = viewModel.dish?.hits[indexPath.row]
         cell.dishName.text = dish?.recipe.label
-        
+        cell.dishImage.setImage(with: dish?.recipe.image ?? "hehe")
         cell.calories.text = String(Int(dish?.recipe.calories ?? 1) as Int ) as String
         cell.cuisineType.text = dish?.recipe.cuisineType?[0]
         cell.dietLabels.text = dish?.recipe.dietLabels?.first
         cell.mealType.text = dish?.recipe.mealType[0]
-        
+        cell.dishDetailView.layer.cornerRadius = 15
+        cell.dishImage.layer.cornerRadius = 15
         return cell
     }
     
@@ -118,6 +138,27 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         vc.dish = recipe
         self.navigationController?.pushViewController(vc, animated: true)
     }
+}
+extension HomeViewController: UISearchBarDelegate,UISearchControllerDelegate{
     
+//    func searchBarSetup(){
+//        searchBar.delegate = self
+//       
+//    }
     
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        
+//        ApiManager.shared.updateSearchQuery(query: searchText) {  [weak self] result  in
+//            switch result{
+//                
+//            case .success(let dish):
+//                self?.viewModel.dish = dish
+//                DispatchQueue.main.async {
+//                    self?.tableView.reloadData()
+//                }
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//    }
 }
